@@ -1,3 +1,9 @@
+:root {
+  --bastarda-ff: "Jacquarda Bastarda 9", serif;
+  /* COLORS */
+  --red: #ff0000;
+}
+
 *,
 *::before,
 *::after {
@@ -13,12 +19,33 @@ body {
   min-height: 100vh;
 }
 
+/* HEADER STARTS HERE */
 header {
-  height: 80px;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: #ffffff;
-  text-align: center;
+  overflow: hidden;
 }
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--bastarda-ff);
+  font-size: 25px;
+  color: var(--red);
+}
+
+header .logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* HEADER ENDS HERE */
 
 main {
   display: flex;
