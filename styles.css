@@ -1,7 +1,10 @@
 :root {
   --bastarda-ff: "Jacquarda Bastarda 9", serif;
+  --yarndings-ff: "Yarndings 20", system-ui;
   /* COLORS */
   --red: #ff0000;
+  --black: #121111;
+  --white: #ffffff;
 }
 
 *,
@@ -15,8 +18,11 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #444;
   min-height: 100vh;
+  background-image: url("/img/v.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* HEADER STARTS HERE */
@@ -26,7 +32,8 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
+  border-bottom: 10px solid var(--black);
   overflow: hidden;
 }
 
@@ -41,29 +48,32 @@ header .logo {
 }
 
 header .logo img {
-  width: 100px;
-  height: auto;
+  width: auto;
+  height: 80px;
 }
 
 /* HEADER ENDS HERE */
 
+/* MAIN SECTION STARTS HERE */
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   flex-grow: 1;
-  margin: 20px 10px;
+  margin: 0 15px;
 }
 
 button {
   flex: 1 0 calc(25% - 10px);
-  margin: 5px;
-  background-color: #ddd;
+  margin: 5px 5px;
   height: 80px;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
   main {
-    margin: 20px 10px;
+    margin: 0 10px;
   }
   button {
     flex: 1 0 calc(33.33% - 10px); /* Three divs in a row */
@@ -72,7 +82,7 @@ button {
 
 @media (max-width: 576px) {
   main {
-    margin: 20px 10px;
+    margin: 0 10px;
   }
   button {
     flex: 1 0 calc(50% - 10px); /* Two divs in a row */
@@ -80,14 +90,29 @@ button {
 }
 
 @media (max-width: 400px) {
+  main {
+    margin: 10px 10px;
+  }
   button {
     flex: 1 0 calc(100% - 10px); /* Two divs in a row */
   }
 }
 
+/* MAIN SECTION ENDS HERE */
+
+/* FOOTER STARTS HERE */
+
 footer {
   width: 100%;
-  height: 80px;
-  background-color: #ffffff;
+  padding: 30px;
+  background-color: var(--white);
+  border-top: 10px solid var(--black);
   text-align: center;
 }
+
+footer span {
+  font-family: var(--yarndings-ff);
+  color: var(--red);
+}
+
+/* FOOTER ENDS HERE */
