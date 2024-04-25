@@ -12,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Yarndings+20&display=swap" rel="stylesheet">
-    <!--- Google fonts END --->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+<!--- Google fonts END --->
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
     <title>Buslianka</title>
 </head>
@@ -24,16 +27,27 @@
 </header>
 
 <main>
-    <button><a>Tribute page</a></button>
-    <button><a>Survey Form</a></button>
-    <button><a>Technical Document</a></button>
-    <button><a>Landing Page</a></button>
-    <button><a>Event Page</a></button>
-    <button><a>Parallax Website</a></button>
-    <button><a>Restaurant Webpage</a></button>
-    <button><a>Photography Webpage</a></button>
+    <button class="category-btn btn-one"><a>Tribute page</a></button>
+    <button class="category-btn btn-two"><a>Survey Form</a></button>
+    <button class="category-btn btn-three"><a>Technical Document</a></button>
+    <button class="category-btn btn-four"><a>Landing Page</a></button>
+    <button class="category-btn btn-five"><a>Event Page</a></button>
+    <button class="category-btn btn-six"><a>Parallax Website</a></button>
+    <button class="category-btn btn-seven"><a>Restaurant Webpage</a></button>
+    <button class="category-btn btn-eight"><a>Photography Webpage</a></button>
 </main>
-<footer>Made with <span>y</span> by Karyna Misnik</footer>
+<footer>
+    <div>Made with <span>y</span></div>
+    <div class="lang-btn-container">
+        <button ><a>English</a></button>
+        <button ><a>Беларуская</a></button>
+       <!--  <button onclick="loadEnglish()"><a>English</a></button>
+        <button onclick="loadBelarusian()"><a>Беларуская</a></button>
+    /===== ADD A NEW HTML FILE WHICH DUPLICATES THE ORIGINAL ONE FOR TRANSLATION OPTION =====/
+    -->
+    </div>
+
+</footer>
     
     
         <script src="main.js"></script>

@@ -1,6 +1,7 @@
 :root {
   --bastarda-ff: "Jacquarda Bastarda 9", serif;
   --yarndings-ff: "Yarndings 20", system-ui;
+  --lato-ff: "Lato", sans-serif;
   /* COLORS */
   --red: #ff0000;
   --black: #121111;
@@ -23,6 +24,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: var(--lato-ff);
 }
 
 /* HEADER STARTS HERE */
@@ -64,7 +66,8 @@ main {
   margin: 0 15px;
 }
 
-button {
+/* BUTTONS STYLES MAIN SECTION START HERE */
+.category-btn {
   flex: 1 0 calc(25% - 10px);
   display: flex;
   justify-content: center;
@@ -83,12 +86,12 @@ button {
   transition: 0.5s;
   overflow: hidden;
 }
-button a {
+.category-btn a {
   z-index: 10000;
   position: absolute;
 }
 
-button::before {
+.category-btn::before {
   content: "";
   position: absolute;
   inset: 0px;
@@ -99,10 +102,10 @@ button::before {
   z-index: 1;
   transform: translateX(-100%);
 }
-button:hover::before {
+.category-btn:hover::before {
   transform: translateX(0%);
 }
-button::after {
+.category-btn::after {
   content: "";
   position: absolute;
   inset: 0px;
@@ -113,18 +116,19 @@ button::after {
   z-index: 1;
   transform: translateX(100%);
 }
-button:hover::after {
+.category-btn:hover::after {
   transform: translateX(0%);
 }
-button:hover {
+.category-btn:hover {
   color: var(--white);
 }
+/* BUTTONS STYLES MAIN SECTION END HERE */
 
 @media (max-width: 768px) {
   main {
     margin: 0 10px;
   }
-  button {
+  .category-btn {
     flex: 1 0 calc(33.33% - 10px); /* Three divs in a row */
   }
 }
@@ -133,7 +137,7 @@ button:hover {
   main {
     margin: 0 10px;
   }
-  button {
+  .category-btn {
     flex: 1 0 calc(50% - 10px); /* Two divs in a row */
   }
 }
@@ -142,7 +146,7 @@ button:hover {
   main {
     margin: 10px 10px;
   }
-  button {
+  .category-btn {
     flex: 1 0 calc(100% - 10px); /* Two divs in a row */
   }
 }
@@ -152,6 +156,10 @@ button:hover {
 /* FOOTER STARTS HERE */
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 30px;
   background-color: var(--white);
@@ -162,6 +170,15 @@ footer {
 footer span {
   font-family: var(--yarndings-ff);
   color: var(--red);
+}
+
+.lang-btn-container {
+  display: flex;
+}
+
+footer button {
+  margin: 10px 10px 0 10px;
+  padding: 10px;
 }
 
 /* FOOTER ENDS HERE */
