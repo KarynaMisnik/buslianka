@@ -1,13 +1,3 @@
-:root {
-  --bastarda-ff: "Jacquarda Bastarda 9", serif;
-  --yarndings-ff: "Yarndings 20", system-ui;
-  --lato-ff: "Lato", sans-serif;
-  /* COLORS */
-  --red: #ff0000;
-  --black: #121111;
-  --white: #ffffff;
-}
-
 *,
 *::before,
 *::after {
