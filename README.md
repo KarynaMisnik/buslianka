@@ -1,4 +1,4 @@
-## Buslianka 🪹🪶 
+## Buslianka 
 
 ### Languages:
 English; 
