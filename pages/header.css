@@ -1,0 +1,39 @@
+@import url("../../global.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER STARTS HERE */
+header {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--white);
+  border-bottom: 10px solid var(--black);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--bastarda-ff);
+  font-size: 25px;
+  color: var(--red);
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  background-image: url("../../img/nest.png");
+  background-size: cover;
+}
+
+/* HEADER ENDS HERE */
