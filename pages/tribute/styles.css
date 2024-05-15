@@ -19,7 +19,7 @@ main {
 }
 
 /* BUTTONS STYLES MAIN SECTION START HERE */
-main div {
+.tribute-pg {
   flex: 1 0 calc(25% - 10px);
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@ main div {
   main {
     margin: 0 10px;
   }
-  main div {
+  .tribute-pg {
     flex: 1 0 calc(50% - 10px);
   }
 }
@@ -52,7 +52,7 @@ main div {
   main {
     margin: 10px 10px;
   }
-  main div {
+  .tribute-pg {
     flex: 1 0 calc(100% - 10px);
     font-size: 16px;
   }
