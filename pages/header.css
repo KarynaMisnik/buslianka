@@ -32,7 +32,6 @@ header {
 img {
   width: 80px;
   height: 80px;
-  background-image: url("../../img/nest.png");
   background-size: cover;
 }
 
