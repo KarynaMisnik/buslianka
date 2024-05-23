@@ -161,10 +161,11 @@ footer {
   background-color: var(--white);
   border-top: 10px solid var(--black);
   text-align: center;
+  font-size: 25px;
 }
 
 footer span {
-  font-family: var(--yarndings-ff);
+  font-size: 30px;
   color: var(--red);
 }
 
