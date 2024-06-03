@@ -20,16 +20,3 @@ img.addEventListener("mouseleave", function () {
   // Change back to the original image source on mouse leave
   this.src = "../../img/nest.png";
 });
-
-/* Change text on hover 'Coming soon' */
-const buttons = document.querySelectorAll(".tribute-pg");
-
-buttons.forEach((button) => {
-  const originalText = button.innerText; // Store original text
-  button.addEventListener("mouseenter", () => {
-    button.innerText = "Coming soon"; // Set hover text
-  });
-  button.addEventListener("mouseleave", () => {
-    button.innerText = originalText; // Restore original text
-  });
-});

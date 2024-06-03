@@ -97,3 +97,12 @@ main {
 .tribute-pg:hover::before {
   height: 190%;
 }
+
+.tribute-pg a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.tribute-pg:hover a {
+  color: var(--white);
+}

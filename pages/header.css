@@ -30,6 +30,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--red);
+  text-decoration: none;
 }
 
 img {

@@ -11,3 +11,9 @@
   --black: #121111;
   --white: #ffffff;
 }
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none; /* Remove underline on hover/focus */
+}

@@ -27,4 +27,8 @@ footer button {
   padding: 10px;
 }
 
+footer button a {
+  color: var(--black);
+}
+
 /* FOOTER ENDS HERE */
