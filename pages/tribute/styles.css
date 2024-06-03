@@ -1,5 +1,11 @@
 @import url("../../global.css");
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 *,
 *::before,
 *::after {
@@ -67,15 +73,15 @@ main {
   text-align: center;
   padding: 20px 40px;
   background: none;
-  border: 2px solid tomato;
-  color: tomato;
+  border: 2px solid var(--black);
+  color: var(--black);
   font-size: 25px;
   position: relative;
   transition: 0.5s;
   overflow: hidden;
 }
 .tribute-pg:hover {
-  color: white;
+  color: var(--white);
 }
 .tribute-pg::before {
   content: "";
@@ -84,7 +90,7 @@ main {
   left: 0px;
   width: 100%;
   height: 0%;
-  background: tomato;
+  background: var(--black);
   z-index: -1;
   transition: 0.5s;
 }
